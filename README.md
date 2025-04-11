@@ -44,6 +44,5 @@ Now, anyone on your team can ask:
 
 > _Boom. SQL generated. Results delivered._  
 ```sql
-SELECT date, active_users
-FROM daily_metrics
-WHERE date BETWEEN '2024-03-01' AND '2024-03-31';
+ SELECT AVG(EXTRACT(EPOCH FROM avg_wait_time) / 60.0) AS average_wait_time_minutes FROM daily_rides;
+```
