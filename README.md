@@ -4,7 +4,7 @@
 
 Welcome to **InsightBot** — the AI-powered sidekick your cross-functional teams have been begging for. It's like having a personal data analyst… who works 24/7, never complains, and answers in seconds.
 
-🔮 Powered by **OpenAI GPT-4**  
+🔮 Powered by **OpenAI GPT-4o**  
 ⚙️ Built with **Flask + PostgreSQL**  
 📊 Designed for **humans, not engineers**
 
