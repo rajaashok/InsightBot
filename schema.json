@@ -1,0 +1,50 @@
+{
+    "database": {
+        "tables": [
+          {
+            "name": "daily_user_metrics",
+            "columns": [
+              { "name": "id", "type": "SERIAL", "description": "Primary key" },
+              { "name": "date", "type": "DATE", "description": "Date of the data entry" },
+              { "name": "country", "type": "TEXT", "description": "Country where the metrics are recorded" },
+              { "name": "new_signups", "type": "INTEGER", "description": "Number of new signups" },
+              { "name": "active_users", "type": "INTEGER", "description": "Number of active users" },
+              { "name": "returning_users", "type": "INTEGER", "description": "Number of returning users" }
+            ]
+          },
+          {
+            "name": "daily_rides",
+            "columns": [
+              { "name": "id", "type": "SERIAL", "description": "Primary key" },
+              { "name": "date", "type": "DATE", "description": "Date of the ride data" },
+              { "name": "country", "type": "TEXT", "description": "Country where the rides took place" },
+              { "name": "total_rides", "type": "INTEGER", "description": "Total number of rides" },
+              { "name": "avg_ride_time", "type": "INTERVAL", "description": "Average ride time" },
+              { "name": "avg_wait_time", "type": "INTERVAL", "description": "Average wait time" }
+            ]
+          },
+          {
+            "name": "daily_revenue",
+            "columns": [
+              { "name": "id", "type": "SERIAL", "description": "Primary key" },
+              { "name": "date", "type": "DATE", "description": "Date of the revenue data" },
+              { "name": "country", "type": "TEXT", "description": "Country where the revenue was generated" },
+              { "name": "gross_revenue", "type": "NUMERIC", "description": "Gross revenue" },
+              { "name": "driver_payouts", "type": "NUMERIC", "description": "Total payouts to drivers" },
+              { "name": "net_revenue", "type": "NUMERIC", "description": "Net revenue after payouts" }
+            ]
+          },
+          {
+            "name": "city_growth_targets",
+            "columns": [
+              { "name": "id", "type": "SERIAL", "description": "Primary key" },
+              { "name": "country", "type": "TEXT", "description": "Country Name" },
+              { "name": "target_month", "type": "DATE", "description": "Target month for growth" },
+              { "name": "signup_goal", "type": "INTEGER", "description": "Goal for new signups" },
+              { "name": "ride_goal", "type": "INTEGER", "description": "Goal for total rides" },
+              { "name": "revenue_goal_usd", "type": "NUMERIC", "description": "Revenue goal in USD" }
+            ]
+          }
+        ]
+      }
+}

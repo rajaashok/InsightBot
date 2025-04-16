@@ -1,0 +1,8 @@
+langchain_community
+SQLAlchemy
+psycopg2-binary
+python-dotenv
+python-multipart
+pydantic
+python-flask
+postgresql
